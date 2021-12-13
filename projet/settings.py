@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'c6i&w%lhi7f!&*in)8y%j@n2zp6ql+iqqpwsyk=16)_hm#t2$&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['deployeapivrm.herokuapp.com']
 
 
 # Application definition
@@ -144,4 +144,4 @@ STATIC_ROOT = os.path.json(BASE_DIR, 'staticfiles')
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
-#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
