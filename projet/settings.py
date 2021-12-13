@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['localhost', 'deployeapivrm.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'homepage',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -142,5 +143,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.json(BASE_DIR, 'staticfiles')
 
 # Extra places for collectstatic to find static files.
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'homepage/static'),]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
