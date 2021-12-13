@@ -25,7 +25,7 @@ SECRET_KEY = 'c6i&w%lhi7f!&*in)8y%j@n2zp6ql+iqqpwsyk=16)_hm#t2$&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'deployeapivrm.heroku.com']]
 
 
 # Application definition
