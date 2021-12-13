@@ -13,7 +13,7 @@ from pathlib import Path
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -143,5 +143,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.json(BASE_DIR, 'staticfiles')
 
 # Extra places for collectstatic to find static files.
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'homepage/static'),]
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
